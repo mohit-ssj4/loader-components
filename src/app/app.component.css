@@ -1,0 +1,23 @@
+.loader-container {
+  width: 130px;
+  height: 130px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loader-div {
+  width: calc(100% - 16px);
+  height: calc(100% - 16px);
+  border: 8px solid transparent;
+  border-radius: 50%;
+  border-top: 8px solid #09f;
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
